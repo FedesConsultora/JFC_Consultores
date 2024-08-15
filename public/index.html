@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -13,21 +13,146 @@
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family:  'Monserrat', 'Ubuntu', sans-serif;
+        background-image: url("https://fedesagency.com/jfcConsultores/fondoHeaderMobile.jpg");
+      }
+      .header {
+        
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .header .logo_jfc {
+        width: 9rem;
+        flex-shrink: 0;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+      }
+      .header .titulo_container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1rem;
+      }
+      .header .titulo_container .titulo1 {
+        color: #FFF;
+        text-align: center;
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;
+        letter-spacing: 1.92px;
+      }
+      .header .titulo_container .titulo2 {
+        color: #2DAECC;
+        text-align: center;
+        text-shadow: 0px 4px 20px rgba(252, 252, 252, 0.80);
+        -webkit-text-stroke-width: 0.5px;
+        -webkit-text-stroke-color: #FCFCFC;
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;
+        letter-spacing: 1.92px;
+        position: relative;
+        bottom: 0.7rem;
+        
+      }
+      .header .logo_centerpoint{
+        width: 11rem;
+        flex-shrink: 0;
+        margin-bottom: 2rem;
+      }
+      .header .subtitulo {
+        color: #FFF;
+        text-align: center;
+        text-shadow: 0px 4px 20px rgba(252, 252, 252, 0.80);
+        font-size: 1.4rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 1.28px;
+        margin-bottom: 1.5rem;
+      }
+      .header .carrusel {
+        display: flex;
+        align-items: center;
+        width: 90%;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+      }
+      .header .carrusel .boton-carrusel {
+        background-color: transparent !important;
+        border: 0 !important;
+        cursor: pointer;
+        width: 15px;
+      }
+      .header .carrusel .boton-carrusel img {
+        width: 100%;
+      }
+      .header .carrusel .diapositiva-carrusel {
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .header .carrusel .diapositiva-carrusel img {
+        width: 100%;
+        transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+      }
+      .header .botonInformacion {
+        padding: 0.5rem  1.5rem;
+        background: #2DAECC;
+        width: 85%;
+        color: #FFF;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 0.7rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.8px;
+        text-transform: uppercase;
+        border: 0;
+        margin-bottom: 4rem;
+      }
+      .tarjetasContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+      @media (min-width: 1300px) {
+        .header {
+          background-image: url("https://fedesagency.com/jfcConsultores/fondoHeaderDesktopGrande.jpg");
+          background-size: cover;
+        }
+        .header .logo_jfc {
+          width: 12rem;
+          flex-shrink: 0;
+          margin-top: 2.5rem;
+          margin-bottom: 2rem;
+        }
 
+      }
+
+    </style>
     <title>JFC Consultores | HOME</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+   
   </body>
 </html>
